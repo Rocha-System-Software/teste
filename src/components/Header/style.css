@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-size: 22px;
+    color: white!important;
+}
+
+.logo{
+    font-size:55px;
+}
+
+.list-header{
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white!important;
+    opacity: 0.8;
+    display: flex;
+}
+
+.list-header::after{
+    content: "";
+    position: absolute;
+    background-color: pink;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: 3px;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.list-header:hover:after{
+    width: 100%;
+}
+
+.list-header:hover{
+    opacity: 1;
+}
+
+@media (max-width:575px) {
+    .logo{
+        font-size: 40px;
+    }
+}
+  
+  
+  
